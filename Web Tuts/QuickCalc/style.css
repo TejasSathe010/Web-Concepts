@@ -1,0 +1,90 @@
+:root {
+    --primary: #67b7f5;
+    --secondary: #fc03b1;
+  }
+  
+  
+  
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    font-family: monospace;
+  }
+  
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  height: 80%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+  border: 1px solid #fc03b1;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  margin: 30px auto;
+  font-size: 2rem;
+  color: #fc03b1;
+  font-weight: bold;
+}
+
+form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+input {
+  padding: 10%;
+  outline: 1px solid #fc03b1;
+  margin: 5px 0;
+  font-size: 1rem;
+
+}
+
+.operators {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.operators button {
+  width: 100%;
+  outline: 1px solid #fc03b1;
+  padding: 3px;
+}
+
+button:hover {
+  background-color: var(--primary);
+}
+
+.total {
+  padding: 3px;
+  outline: 1px solid #fc03b1;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.answer {
+  padding: 10%;
+  outline: 1px solid #fc03b1;
+  text-align: center;
+  margin: 5px 0;
+}
