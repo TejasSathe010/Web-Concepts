@@ -47,9 +47,17 @@ input, textarea {
 }
 
 /* fonts */
+* {
+    font-family: 'Rubik', sans-serif;
+}
 
+h1, h2, h3, h4 {
+    color: #DDDBFF;
+    font-weight: normal;
+}
 
 /* mobile styles */
+
 
 /* small tablets styles */
 @media screen  and (min-width: 620px) {
