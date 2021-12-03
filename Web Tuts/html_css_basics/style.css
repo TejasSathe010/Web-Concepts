@@ -1,0 +1,87 @@
+/* Universal selector */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div {
+    display: block;
+    max-width: 70%;
+    margin: 0px auto;
+    font-size: 1.2rem;
+}
+
+
+/* ID selector */
+#title {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+/* Tag selector */
+p {
+    color: #0f0f0f;
+    margin-bottom: 10px;
+    border: 1px solid;
+    font-size: 1.2 rem;
+}
+
+/* Spefic class tag selector */
+p.description {
+    text-align: justify;
+    line-height: 1.2rem;
+    text-indent: 200px;
+}
+
+/* All Descendants */
+div a {
+    color: #f11919;
+    text-decoration: none;
+}
+
+/* Direct Child */
+div > a {
+    color: #734ae4;
+}
+
+/* General Sibilings */
+h1 ~ p {
+    color: #f11919;
+}
+
+/* Direct Siblings */
+h1 + p {
+    color: #14db78;
+}
+
+/* Grouping elements h1, h1, h3 */
+
+/* Making a link look like button */
+
+a.btn {
+    text-decoration: none;
+    display: inline-block;
+    color: #734ae4;
+    border: 1px solid #fc03b1;
+    padding: 8px 12px;
+    font-size: 1.5rem;
+    border-radius: 5%;
+    margin-bottom: 10px;
+}
+
+a.btn:hover {
+    color: #fc03b1;
+    border: 1px solid #734ae4;
+}
+
+@media screen and (max-width: 500px) {
+
+    ul li {
+        flex-direction: column;
+    }
+
+    a.btn {
+        display: block;
+    }
+}
