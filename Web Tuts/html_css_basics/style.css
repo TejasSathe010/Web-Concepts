@@ -115,3 +115,44 @@ p::before {
         margin: 0 3px;
     }
 }
+
+div.sidebar {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 20%;
+    height: 100vh;
+    background-color: rgb(182, 212, 210);
+}
+
+div.sidebar ul {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    justify-content: center;
+    list-style: none;
+}
+
+div.sidebar ul a {
+    display: flex;
+    text-decoration: none;
+    padding: 15px 3px;
+    justify-content: center;
+    align-items: center;
+}
+
+div.sidebar ul a:hover {
+    background-color: #e69696;
+}
+
+.toggle {
+    z-index: 999;
+    font-size: 25px;
+    position: fixed;
+    left: 150px;
+    top: 15px;
+    color: rgb(17, 6, 6);
+    font-weight: bold;
+}
