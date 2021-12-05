@@ -98,6 +98,18 @@ p::before {
     a.btn {
         display: block;
     }
+
+    div.sidebar {
+        display: none;
+    }
+
+    div.sidebar ul {
+        display: none;
+    }
+
+    .toggle {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 900px) {
