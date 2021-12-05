@@ -1,11 +1,13 @@
 let btn = document.querySelector('.btn');
 
 // Array.from
-// pseudo-classes Also Work
+// pseudo-classes Also Work in querySelector
+// node.matches (True/False)
 
 btn.addEventListener('click', () => {
-    let li_last = document.querySelectorAll('ul li:last-child');
-    for(let li of li_last) {
-        console.log(li.textContent);
-    }
+    for(let node of document.body.children) {
+        if(node.matches('a[href ^= "http"]')) {
+            console.log(node.href);
+        }
+    }   
 });
