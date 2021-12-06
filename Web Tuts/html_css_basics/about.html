@@ -5,13 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .book {
+        width: 50%;
+        background-color: #dfd6d6;
+        color: black;
+      }
+      .click {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0px;
+        list-style: none;
+      }
+    </style>
 </head>
 <body>
-    <button style="color: #454545; padding: 5px;" class="btn">Click me</button>
+    <button style="color: #454545; padding: 5px; margin: 10px" class="add-btn">Click me</button>
+    <button style="color: #454545; padding: 5px; margin: 10px" class="del-btn">Delete</button>
     <div id="contents">
         <ul class="book">
-          <li id="chapter">Chapter 1</li>
-          <li class="chapter">Chapter 1</li>
+
         </ul>
       </div>
       <script src="app.js"></script>
