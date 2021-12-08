@@ -1,0 +1,87 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:  "sans-serif";
+    font-size: 25px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+[class^="box-"] {
+    height: 100px;
+    width: 20%;
+    background-color: #e6e6dd;
+}
+
+.container {
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     gap: 20px;
+
+     /* Flex direction */
+     /* flex-direction: row;  By-Default */
+     /* flex-direction: row-reverse; */
+     flex-direction: row;
+     /* flex-direction: column-reverse; */
+
+     /* Justify-content Main Axis */
+     /* justify-content: flex-start; By-Default  */
+     /* justify-content: center; */
+     /* justify-content: flex-end;  */
+     /* justify-content: space-between; */
+     /* justify-content: space-around; */
+     /* justify-content: space-evenly; */
+
+     /* no-wrap - will no go on next link - size will shrink */
+     /* Min-Size repected and items moves to the next line */
+     flex-wrap: wrap;
+
+     /* Align-content Cross Axis */
+     /* align-content: flex-start; By-Default  */
+     /* align-content: center; */
+     /* Same 6 Values as justify content */
+
+     /* place-content: align-content then justify-content; // short_hand */
+
+     /* Align Items (Moves Items): flex-start, flex-end, center, stretch, baseline */
+     /* Same as Text-align */
+     align-items: center;
+}
+
+.box-1 {
+    /* Align-content for single item */
+    /* Can move single item around container */
+    /* Same properties as justify-content */
+    /* align-self: flex-end; */
+    align-self: flex-start;
+
+    /* Exact measurement - (Same as Width) */
+    flex-basis: 100%;
+    /* Exact size - No shrinking No growing */
+    /* flex-basis: 100px; */
+}
+
+.box-2 {
+    /* Can change order of items in container (Starts 0 - n) */
+    order: 3;
+}
+
+.box-3 {
+    /* Works on flex items */
+    /* Calculates Proportion */
+    /* 1 means nothing, 2 means double than other (1) */
+    flex-grow: 4;
+}
+
+.box-4 {
+    /* Works on flex items */
+    /* Calculates Proportion */
+    /* Opposite of flex-grow */
+    /* 1 means nothing, 2 means double than other (1) */
+    flex-shrink: 4;
+}
