@@ -47,12 +47,13 @@ body {
      /* align-content: center; */
      /* Same 6 Values as justify content */
 
-     /* place-content: align-content then justify-content; // short_hand */
 
      /* Align Items (Moves Items): flex-start, flex-end, center, stretch, baseline */
      /* Same as Text-align */
      align-items: center;
 }
+
+
 
 /* **************************************************************** */
 
