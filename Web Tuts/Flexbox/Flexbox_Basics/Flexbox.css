@@ -39,6 +39,7 @@ body {
 
      /* no-wrap - will no go on next link - size will shrink */
      /* Min-Size repected and items moves to the next line */
+     /* Wrap-reverse - Reverses the wrapping order */
      flex-wrap: wrap;
 
      /* Align-content Cross Axis */
@@ -53,6 +54,21 @@ body {
      align-items: center;
 }
 
+/* **************************************************************** */
+
+/* place-content Shorthand */
+/* place-content: align-content justify-content; */
+
+/* flex-flow Shorthand */
+/* flex-flow: flex-direction flex-wrap */
+
+/* Flex Shorthand */
+/* flex: flex-grow flex-shrink flex-basis */
+
+/* **************************************************************** */
+
+
+
 .box-1 {
     /* Align-content for single item */
     /* Can move single item around container */
@@ -61,7 +77,7 @@ body {
     align-self: flex-start;
 
     /* Exact measurement - (Same as Width) */
-    flex-basis: 100%;
+    flex-basis: 50px;
     /* Exact size - No shrinking No growing */
     /* flex-basis: 100px; */
 }
