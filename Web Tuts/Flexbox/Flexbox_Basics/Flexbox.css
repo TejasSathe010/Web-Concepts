@@ -11,11 +11,21 @@ body {
     min-height: 100vh;
 }
 
-[class^="box-"] {
+/* [class^="box-"] {
     height: 100px;
     width: 20%;
     background-color: #e6e6dd;
+} */
+
+[class^="box-"] {
+    background-color: #e6e6dd;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    align-items: center;
 }
+
 
 .container {
      width: 100%;
@@ -51,6 +61,7 @@ body {
      /* Align Items (Moves Items): flex-start, flex-end, center, stretch, baseline */
      /* Same as Text-align */
      align-items: center;
+     align-content: flex-start;
 }
 
 
@@ -59,7 +70,7 @@ body {
 
 /* place-content Shorthand */
 /* place-content: align-content justify-content; */
-
+ 
 /* flex-flow Shorthand */
 /* flex-flow: flex-direction flex-wrap */
 
@@ -75,24 +86,27 @@ body {
     /* Can move single item around container */
     /* Same properties as justify-content */
     /* align-self: flex-end; */
-    align-self: flex-start;
+    /* align-self: flex-start; */
 
     /* Exact measurement - (Same as Width) */
-    flex-basis: 50px;
+    /* flex-basis: 50px; */
     /* Exact size - No shrinking No growing */
     /* flex-basis: 100px; */
+    
 }
 
 .box-2 {
     /* Can change order of items in container (Starts 0 - n) */
-    order: 3;
+    /* order: 3; */
+
 }
 
 .box-3 {
     /* Works on flex items */
     /* Calculates Proportion */
     /* 1 means nothing, 2 means double than other (1) */
-    flex-grow: 4;
+    /* flex-grow: 4; */
+
 }
 
 .box-4 {
@@ -100,5 +114,21 @@ body {
     /* Calculates Proportion */
     /* Opposite of flex-grow */
     /* 1 means nothing, 2 means double than other (1) */
-    flex-shrink: 4;
+    /* flex-shrink: 4; */
+
+}
+
+@media screen and (max-width: 768px){
+    .container {
+        flex-direction: column;
+        flex-grow: 100%;
+        height: 20vh;
+        gap: 5px;
+    }
+
+    [class^="box-"] {
+        flex-grow: 100%;
+        width: 100%;
+        height: 2vh;
+    }
 }
