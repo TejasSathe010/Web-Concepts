@@ -1,0 +1,82 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: #f587a8;
+}
+
+.banner-area {
+    max-width: 960px;
+    margin: 0 auto;
+    color: #fff; 
+    font-family: Poppins;
+}
+
+.banner-area h2 {
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.menu-area {
+    display: flex;
+    list-style: none;
+}
+
+.menu-area li {
+    background-color: #262626;
+    flex: 1;
+    text-align: center;
+}
+
+.menu-area li:not(:first-child) {
+    border-left: 2px solid #fff;
+}
+
+.menu-area li:hover {
+    background-color: #333;
+}
+
+.menu-area li a {
+    display: block;
+    padding: 15px 0px;
+    color: inherit;
+    text-decoration: none;
+    font-family: Poppins;
+    text-transform: uppercase;
+}
+
+input[type="checkbox"], .res-menu {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .res-menu {
+        display: flex;
+        justify-content: center;
+        background-color: #000;
+        cursor: pointer;
+        padding: 20px 0px;
+        text-transform: uppercase;
+        font-family: inherit;
+    }
+
+    .menu-area {
+        display: none;
+    }
+
+    input[type="checkbox"]:checked ~ .menu-area {
+        display: block;
+    }
+
+    .menu-area li:not(:first-child) {
+        border: 0;
+    }
+
+    .menu-area li:not(:last-child) {
+        margin: 2px 0;
+    }
+
+}
