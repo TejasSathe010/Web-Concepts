@@ -27,4 +27,13 @@ Specify in Body -> font size then give relative 1em, 2em.
 
 rems (Always) -> root em, Always relative to root of the page.
 body {font size} relative rem;
+body {font size : 62.5%} then relative 1rem = 10px, 2rem = 20px.
+
+
+Picking which unit to use?
+Font-size -> rem preferred
+Maring padding -> em preferred (As padding and margin pays attention to font size as parent) (Em is relative to font size of element)
+
+
+ *** Flexbox ***
 
