@@ -1,0 +1,30 @@
+absolute px;
+width %;
+Relative fontSize em rem;
+Relative viewPort vw, vh, vmin, vmax;
+
+
+% --> 50% of parent. Always % of parent.
+Block level element have witdth of 100% by default.
+margin: 0 auto;  Centers things.
+
+
+Image Inline Default size of themself.
+Img Height X Width Relative
+Img-Width 100% of parent. (COVER)
+
+
+Max-Width: Layout will not grow after that. (Container)
+max-width: 620px; Range(0-620px not more than that)
+Min-Width: Layout will not shrink after that. (Not recommended on Container)
+(We can have width and max-width for the container)
+
+
+Relative units
+em -> Relative to parent element's font size. Direct parent. (If not specified then go up and up)
+Specify in Body -> font size then give relative 1em, 2em.
+(Cascading effect issue)
+
+rems (Always) -> root em, Always relative to root of the page.
+body {font size} relative rem;
+
