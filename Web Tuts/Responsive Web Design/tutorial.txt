@@ -36,4 +36,18 @@ Maring padding -> em preferred (As padding and margin pays attention to font siz
 
 
  *** Flexbox ***
+ Div - block
+ display: flex on parent to arrange children.
+
+ .container { flex
+     .columns/rows {
+         .col{}
+         .col{}
+         .col{}
+     }
+     .columns/rows {
+         .col{}
+         .col{}
+     }
+ }
 
