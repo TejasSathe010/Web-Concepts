@@ -51,3 +51,9 @@ Maring padding -> em preferred (As padding and margin pays attention to font siz
      }
  }
 
+
+
+*** Media Query ***
+@media media-type and (media-features) {}
+
+@media screen and (min-width: 960px) {}
