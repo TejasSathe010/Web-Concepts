@@ -14,6 +14,7 @@
     align-items: center;
     padding: 2em 0;
     background-color: #f8f8f8;
+    /* border: 1px solid #fc03b1; */
 }
 
 .text {
@@ -23,6 +24,7 @@
     align-items: center;
     margin: 2em 0;
     text-align: center;
+    /* border: 1px solid #fc03b1; */
 }
 
 .text h1 {
@@ -40,6 +42,7 @@ ul {
     justify-content: center;
     align-items: center;
     padding-left: 0;
+    /* border: 1px solid #fc03b1; */
 }
 
 li {
@@ -47,16 +50,20 @@ li {
 }
 
 a {
-    display: block;
+    display: inline-block;
     padding: 1em 1.5em;
     text-decoration: none;
     color: #707070;
     font-size: 1rem;
+    /* border: 1px solid #fc03b1; */
 }
+
+
 
 a:hover {
     background-color: #1792D2;
     color: #fff;
+    border-bottom: 2px solid #fc03b1;
 }
 
 @media  (max-width: 568px) {
