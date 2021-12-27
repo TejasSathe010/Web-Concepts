@@ -4,14 +4,14 @@
 * {
     margin: 0px;
     font-family: 'Montserrat', sans-serif;
-    letter-spacing: 0.5rem;
+    box-sizing: border-box;
 }
 
 .nav {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     padding: 2em 0;
     background-color: #f8f8f8;
@@ -60,17 +60,23 @@ a {
     /* border: 1px solid #fc03b1; */
 }
 
-
-
 ul li a:hover {
-    /* background-color: #1792D2; */
-    /* color: #fff; */
-    border-bottom: 2px solid #fc03b1;
+    background-color: #1792D2; 
+    color: #fff;
+}
+
+ul li a:focus {
+    border-bottom: 2px solid #1792D2;
 }
 
 /* ul li a:focus */
 
-@media  (max-width: 568px) {
+@media  (max-width: 868px) {
+
+    .nav {
+        flex-direction: column;
+    }
+
     h1 {
         font-size: 1rem;
     }
