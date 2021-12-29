@@ -7,8 +7,9 @@ const useFetch = (url) => {
     
     // Runs every render of component or State changes
     useEffect(() => {
+      const abortCont = new AbortController();
         setTimeout(() => {
-          fetch(url)
+          fetch(url, {signal: abortCont.signal})
           .then(res => {
             if(!res.ok) {
               throw new Error('Could not fetch blog data');
@@ -21,10 +22,15 @@ const useFetch = (url) => {
             setError(null);
           })
           .catch(err => {
-            setError(err.message);
-            setIsPending(false);
+            if(err.name === 'AbortError') {
+              console.log("Request Aborted!");
+            } else {
+              setError(err.message);
+              setIsPending(false);
+            }
           })
-        }, 2000);
+        }, 1000);
+        return () => {abortCont.abort()}
     }, [url]);
     return {data, isPending, error};
 }
