@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Typography */
+
+h1 {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color: #143774;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.subtitle {
+    font-weight: 700;
+    color: #1792D2;
+    font-size: .75rem;
+    margin: 0;
+}
+
+/* Layout */
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 2em 0;
+}
+
+/* Navigation */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+nav li {
+    margin: 0 1em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #707070;
+    font-weight: 700;
+    padding: 0.25em 0;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #1792D2;
+}
+
+.current-page {
+    border-bottom: 1px solid #707070;
+}
+
+.current-page:hover {
+    color: #707070;
+}
+
+/* Mobile-first approach */
+
+@media (min-width: 868px) {
+    .container-nav {
+        display: flex;
+        /* border: 1px solid #fc03b1; */
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav li {
+        margin-left: 2em;
+        margin-right: 0;
+    }
+}
+
+/* Laptop first approach */
+
+@media (max-width: 538px) {
+    .site-title {
+        margin-bottom: 1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-bottom: 1em;
+    }
+}
