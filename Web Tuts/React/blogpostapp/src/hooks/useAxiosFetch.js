@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const useAxiosFetch = () => {
+const useAxiosFetch = (dataUrl) => {
     const [data, setData] = useState([]);
-    const [fetchError, setFetchError] = useEffect(null);
-    const [isLoading, setIsLoading] = useEffect(false);
+    const [fetchError, setFetchError] = useState(null);
+    const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
         let isMounted = true;
@@ -16,21 +16,33 @@ const useAxiosFetch = () => {
                 const response = await axios.get(url, {
                     cancelToken: source.token
                 });
-                if(isMounted) {
+                if (isMounted) {
                     setData(response.data);
                     setFetchError(null);
                 }
             } catch (err) {
-                if(isMounted) {
+                if (isMounted) {
                     setFetchError(err.message);
                     setData([]);
                 }
             } finally {
                 isMounted && setTimeout(() => {
                     setIsLoading(false);
-                }, 2000);
+                }, 3000);
             }
         }
+
         fetchData(dataUrl);
-    });
+
+        const cleanUp = () => {
+            isMounted = false;
+            source.cancel();
+        }
+
+        return cleanUp;
+    }, [dataUrl]);
+
+    return { data, fetchError, isLoading };
 }
+
+export default useAxiosFetch;
