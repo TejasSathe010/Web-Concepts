@@ -7,12 +7,6 @@
       "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
-      "id": 2,
-      "title": "Second post",
-      "datetime": "July 16, 2021 11:47:48 AM",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. two"
-    },
-    {
       "id": 3,
       "title": "Number Three",
       "datetime": "July 16, 2021 11:48:01 AM",
@@ -27,8 +21,14 @@
     {
       "id": 5,
       "title": "why always me",
-      "datetime": "January 04, 2022 3:56:25 PM",
-      "body": "Shut up"
+      "datetime": "January 05, 2022 9:25:28 PM",
+      "body": "Stopping it now\n"
+    },
+    {
+      "id": 6,
+      "title": "My first written post ",
+      "datetime": "January 05, 2022 9:25:50 PM",
+      "body": "Okay Ok enough now."
     }
   ]
 }
