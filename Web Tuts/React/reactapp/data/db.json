@@ -2,18 +2,18 @@
   "items": [
     {
       "id": 1,
-      "checked": false,
+      "checked": true,
       "item": "Pizza"
-    },
-    {
-      "id": 2,
-      "checked": false,
-      "item": "One Two "
     },
     {
       "id": 3,
       "checked": false,
       "item": "Crackers"
+    },
+    {
+      "id": 4,
+      "checked": false,
+      "item": "React"
     }
   ]
 }
